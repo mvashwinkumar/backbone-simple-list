@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BackboneJS List App</title>
+		<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+			.list-group-item {
+				display: block;
+			}
+			.list-group.edit .list-group-item.view{
+				display: none;
+			}
+			.list-group.view .list-group-item.edit{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+					Backbone JS - Simple List Application
+				</a>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid">
+			<section id='app-view'>
+				<header></header>
+				<footer>By Ashwin Kumar M V</footer>
+			</section>
+		</div>
+        
+		<script src="node_modules/jquery/dist/jquery.js"></script>
+		<script src="node_modules/underscore/underscore.js"></script>
+		<script src="node_modules/backbone/backbone.js"></script>
+		<script src="js/ItemModel.js"></script>
+		<script src="js/ItemsCollection.js"></script>
+		<script src="js/ItemView.js"></script>
+		<script src="js/AddItemView.js"></script>
+		<script src="js/TableView.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
