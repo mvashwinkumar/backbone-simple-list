@@ -68,6 +68,7 @@ var ItemView = Backbone.View.extend({
     if(this.model.isValid()) {
       this.$el.addClass('view');
       this.$el.removeClass('edit');
+      $('#table-view').find('.search-input').val('');
       this.model.collection.sort();
     } else {
       alert(this.model.get("title") + " " + this.model.validationError);
